@@ -20,6 +20,7 @@ const InputField: React.FC<Props> = ({
         placeholder="Enter a Task"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
+        required
       />
       <button className="input_submit" type="submit">
         Go

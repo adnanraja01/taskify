@@ -71,8 +71,10 @@
   padding: 0.5rem;
   border: none;
   font-size: 2rem;
+  border-radius: 1rem;
 }
 .todos_single-text:focus {
+  color: #000;
   outline: none;
 }
 .icon {
