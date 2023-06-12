@@ -1,15 +1,12 @@
 import "./App.css";
-import InputField from "./components/InputField";
-import { useState, useEffect } from "react";
-import { Todo } from "./model";
-import TodoList from "./components/TodoList";
 import { config } from "./config/config";
 import { initializeApp } from "firebase/app";
-import { getAuth, onAuthStateChanged } from "firebase/auth";
-import Login from "./components/Login";
+
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 import AuthRoute from "./components/AuthRoute";
+import SignUp from "./components/SignUp";
+import LogIn from "./components/LogIn";
 
 initializeApp(config.firebaseConfig);
 
@@ -25,7 +22,8 @@ const App: React.FC = () => {
             </AuthRoute>
           }
         />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/login" element={<LogIn />} />
       </Routes>
     </BrowserRouter>
   );

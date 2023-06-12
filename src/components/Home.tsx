@@ -27,7 +27,7 @@ const Home = () => {
         <div>
           <button
             onClick={() => signOut(auth)}
-            className="bg-white shadow-xl active:shadow-sm px-[1rem] py-[.6rem] rounded-[1rem] text-s20"
+            className="bg-gradient-to-r from-blue-500 via-blue-500 to-gray-500 shadow-xl active:shadow-sm px-[1rem] py-[.6rem] rounded-[1rem] text-s20 text-white"
           >
             Logout
           </button>

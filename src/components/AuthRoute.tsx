@@ -6,7 +6,6 @@ export interface Props {
   children: string | JSX.Element | JSX.Element[];
 }
 const AuthRoute: React.FunctionComponent<Props> = (props) => {
-  // const { children } = props;
   const auth = getAuth();
   const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
