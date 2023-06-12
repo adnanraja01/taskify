@@ -3,6 +3,7 @@ import React from "react";
 interface Props {
   message: string;
 }
+// Toast Component
 const Toast: React.FC<Props> = ({ message }) => {
   return (
     <div>
@@ -10,5 +11,4 @@ const Toast: React.FC<Props> = ({ message }) => {
     </div>
   );
 };
-
 export default Toast;
